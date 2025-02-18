@@ -9,7 +9,7 @@ int main() {
     cout << "Ingrese una letra (A - Z): ";
     cin >> letra;
 
-    // Convertir la letra a mayúscula para manejar minúsculas
+    // Convertir la letra a mayÃºscula para manejar minÃºsculas
     letra = toupper(letra);
 
     // Variable para almacenar la letra cifrada
@@ -17,11 +17,11 @@ int main() {
 
     // Validar que la entrada sea una letra del alfabeto (A-Z)
     if (letra < 'A' || letra > 'Z') {
-        cout << letra << " no se encuentra en el esquema de codificación ROT13." << endl;
-        return 1; // Terminar el programa con un código de error
+        cout << letra << " no se encuentra en el esquema de codificaciÃ³n ROT13." << endl;
+        return 1; // Terminar el programa con un cÃ³digo de error
     }
 
-    // Usar una instrucción switch para aplicar ROT13
+    // Usar una instrucciÃ³n switch para aplicar ROT13
     switch (letra) {
         case 'A': letraCifrada = 'N'; break;
         case 'B': letraCifrada = 'O'; break;
