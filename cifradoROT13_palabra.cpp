@@ -13,23 +13,23 @@ int main() {
     // Variable para almacenar la palabra cifrada
     string palabraCifrada = "";
 
-    // Iterar sobre cada carácter de la palabra
+    // Iterar sobre cada carÃ¡cter de la palabra
     for (char letra : palabra) {
-        // Convertir la letra a mayúscula para manejar minúsculas
+        // Convertir la letra a mayÃºscula para manejar minÃºsculas
         letra = toupper(letra);
 
-        // Validar que la letra esté en el rango A-Z
+        // Validar que la letra estÃ© en el rango A-Z
         if (letra < 'A' || letra > 'Z') {
             cout << "Error: La palabra debe contener solo letras (A-Z)." << endl;
-            return 1; // Terminar el programa con un código de error
+            return 1; // Terminar el programa con un cÃ³digo de error
         }
 
-        // Aplicar ROT13 usando aritmética en lugar de switch
+        // Aplicar ROT13 usando aritmÃ©tica en lugar de switch
         char letraCifrada;
         if (letra >= 'A' && letra <= 'M') {
             letraCifrada = letra + 13; // Letras A-M se rotan 13 posiciones hacia adelante
         } else if (letra >= 'N' && letra <= 'Z') {
-            letraCifrada = letra - 13; // Letras N-Z se rotan 13 posiciones hacia atrás
+            letraCifrada = letra - 13; // Letras N-Z se rotan 13 posiciones hacia atrÃ¡s
         }
 
         // Agregar la letra cifrada a la palabra cifrada
